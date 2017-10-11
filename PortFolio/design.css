@@ -1,0 +1,579 @@
+/*GÉNÉRAL 30/08/2017 - Arthur
+© 2017 - AUJOURD'HUI, Arthur COURBIER*/
+
+/*VERIFICATIONS GÉNÉRALES*/
+
+	*, *::before, *::after
+	{
+		box-sizing: border-box;
+	}
+
+	body
+	{
+		line-height: 1.75;
+		color: #3d4451;
+		background-color: #efefef;
+	}
+
+	html, body, ul
+	{
+		margin: 0;
+		padding: 0;
+		font-family: 'Open Sans';
+		font-size: 16px;
+	}
+
+	a, li, ul
+	{
+		text-decoration: none;
+		list-style-type: none;
+	}
+
+/*LES COLONNES*/
+
+	.col-1
+	{
+		float: left;
+		width: 50%;
+	}
+
+	.col-2
+	{
+		float: right;
+		width: 50%;
+	}
+
+	.col-3
+	{
+		float: left;
+		width: 25%;
+	}
+
+	.col-4
+	{
+		float: right;
+		width: 75%;
+	}
+
+/*TAILLE PAGE*/
+
+	.container-menu
+	{
+		max-width: 1500px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 0 auto 0 auto;
+	}
+
+	.container-body
+	{
+		max-width: 1000px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 60px auto 0 auto;
+		text-align: justify;
+		word-wrap: break-word;
+	}
+
+/*CONTROLE VISIBILITÉ*/
+
+section, .timeline-box-inner
+{
+	visibility: visible;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/*LE MENU 30/08/2017 - Arthur*/
+
+	#head-menu
+	{
+		height: 60px;
+		background-color: white;
+		box-shadow: 0px 10px 30px rgba(0,0,0,0.19), 0px 6px 10px rgba(0,0,0,0.23);
+		width: 100%;
+		z-index: 2;
+		position: fixed;
+		top: 0;
+	}
+
+	.container-menu .col-1
+	{
+		padding-top: 7px;
+	}	
+
+	.logo
+	{	
+		font-family: "Fredoka One",cursive;
+		text-transform: uppercase;
+		font-weight: inherit;
+		font-size: 20px;
+		color: #9a9da2 !important;
+	}
+
+	.logo span
+	{
+		color: red;
+		font-size: 25px;
+	}
+
+	.item-menu
+	{
+		color: #3d4451;
+		display: inline-block;
+		padding: 15px 0 12px 30px;
+		float: right;
+	}
+
+	.clearfix
+	{
+		padding-top: 5px;
+		margin: 0;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/*LA PAGE 30/08/2017*/
+
+	section
+	{
+		padding-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.section-title
+	{
+		text-align: center;
+		font-size: 35px;
+		letter-spacing: 0.05em;
+	}
+
+	.text-center
+	{
+		text-align: center;
+	}
+
+/*SECTION PRÉSENTATION*/
+
+	#presentation
+	{
+		visibility: visible;
+		padding-top: 80px;
+	}
+
+	.section-presentation p
+	{
+		margin-top: 50px;
+		font-size: 18px;
+	}
+
+	[class^="div-skill-"] .col-1
+	{
+		padding-right: 20px;
+	}
+
+	[class^="div-skill-"] .col-2
+	{
+		padding-left: 20px;
+	}
+
+	.profile
+	{
+		padding: 40px;
+	}
+
+	.profile-img
+	{
+		width: 46%;
+		margin: 0;
+
+	}
+
+	.profile-img img
+	{
+		max-width: 350px;
+		max-height: 350px;
+		border-radius: 2px;
+	}
+
+	.profile-body
+	{
+		width: 48%;
+		margin-right: 5%;
+		margin-left: 0;
+	}
+
+	.profile-info
+	{
+		padding-bottom: 25px;
+		border-bottom: 1px solid #dedede;
+		margin-bottom: 25px;
+	}
+
+	.profile-title
+	{
+		font-size: 36px;
+		line-height: 1.1;
+		margin-bottom: 5px;
+	}
+
+	.profile-title span
+	{
+		margin-right: 5px;
+		font-weight: 300;
+		margin-right: 10px;
+	}
+
+	.profile-position
+	{
+		line-height: 1.1;
+		margin: 0;
+		font-weight: 400;
+		font-size: 20px;
+	}
+
+	.profile-item .col-1, .profile-item .col-2
+	{
+		padding-bottom: 10px;
+	}
+
+	.profile-item .col-1
+	{
+		color: black;
+		font-family: "Open Sans";
+		font-weight: bold;
+		width: 25%;
+	}
+
+	.profile-item .col-2
+	{
+		opacity: 0.7;
+		width: 65%;
+	}
+
+	.profile-social
+	{
+		background-color: red;
+		width: 100%;
+		height: 60px;
+		padding-top: 5px;
+	}
+
+	.social-list
+	{
+		text-align: center;
+	}
+
+	.social-list li
+	{
+		display: inline-block;
+		margin: 0px 15px;
+	}
+	
+	.social-li
+	{
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		padding-top: 13px;
+	}
+	
+	.social-li:hover
+	{
+		animation: social 1s;
+		background-color: rgba(21,21,21,0.3);
+		border-radius: 50%;
+	}
+
+	/*SECTION COMPÉTENCES 30/08/2017 - Arthur*/
+
+	#skill
+	{
+		box-sizing: border-box;
+	}
+
+	.div-skill-h3
+	{
+		text-align: left;
+		font-size: 25px;
+		font-weight: normal;
+		margin: 0 0 10px 0;
+	}
+
+	.div-skill-programmation,
+	.div-skill-informatiques
+	{
+		margin-bottom: 80px;
+	}
+
+		/*BARRE DE PROGRESSION*/
+
+		.progress-bar
+		{
+			position: relative;
+			margin-top: 10px;
+			margin-bottom: 35px;
+			font-size: 15px;
+		}
+
+		.bar-line
+		{
+			height: 5px;
+			border-radius: 5px;
+			background: #efefef;
+		}
+
+		.bar-title
+		{
+			display: block;
+			margin-bottom: 0px;
+		}
+
+		.bar-value
+		{
+			font-size: 16px;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			display: block;
+			box-sizing: border-box;
+		}
+
+		.bar-fill
+		{
+			height: 100%;
+			display: block;
+			position: relative;
+			z-index: 1;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			background-color: red;
+			transition:1s linear;
+		}
+
+	/*SECTION experiences*/
+
+	#experiences
+	{
+		box-sizing: border-box;
+		position: relative;
+	}
+
+	.div-experiences
+	{
+		position: relative;
+	}
+
+	/*SECTION DIPLOMES & ÉTUDES*/
+
+	#education
+	{/*
+		background-color: red;*/
+		box-sizing: border-box;
+		position: relative;
+	}
+
+	.div-education
+	{
+		position: relative;
+	}
+
+	/*SECTION CENTRES D'INTERET*/
+
+	#interet
+	{
+		box-sizing: border-box;
+		position: relative;
+	}
+
+	.interet-body
+	{
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.interet-icons
+	{
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	.interet-icons li
+	{
+		display: inline-block;
+		position: relative;
+		color: red;
+		padding: 15px 12px;
+		margin: 7px 20px;
+		width: 65px;
+		height: 65px;
+		border: 1px solid rgba(0,0,0,0.25);
+		border-radius: 5px;
+	}
+
+	.map-icons a
+	{
+		display: block;
+		width: 100%;
+		height: 100%;
+		font-size: 30px;
+		color: red;
+		cursor: pointer;
+
+	}
+
+	.map-icons a:visited
+	{
+		color: red
+	}
+
+	.interet-icons li:hover:after,
+	.interet-icons li:focus:after 
+	{
+	content: attr(infobull);
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	animation: infobull 0.5s ease-out;
+	transform: translateX(-50%); /* on centre horizontalement  */
+	align-content: center;
+	white-space: nowrap;
+	padding: 5px 10px;
+	background: rgba(55, 55, 55, 0.8);
+	color: #fff;
+	border-radius: 4px;
+	font-size: 1rem;
+	z-index: 1;
+	}
+
+
+.footer
+{
+	margin-top: 100px;
+	animation: footer 1s forwards;
+}
+
+/*LES BOX*/
+
+	.box
+	{
+		background-color: white;
+		padding: 30px;
+		display: table;
+		width: 100%;
+		box-shadow: 0px 3px 3px rgba(0,0,0,0.19), 0px 3px 5px rgba(0,0,0,0.23);
+	}
+
+	.timeline-bar
+	{
+		width: 4px;
+		opacity: 0.2;
+		margin-left: -2px;
+		position: absolute;
+		left: 50%;
+		background-color: red;
+		box-sizing: border-box;
+
+	}
+
+	.timeline-box
+	{
+		margin-bottom: 200px;
+		position: relative;
+	}
+
+	.dot
+	{
+		background-color: red;
+		top: 80px;
+		width: 8px;
+		height: 8px;
+		display: block;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.timeline-box-inner
+	{
+		border-top: 2px solid red;
+		background-color: white;
+		text-align: center;
+		padding: 20px;
+		box-shadow: 0px 1px 6px rgba(0,0,0,0.12), 0px 1px 4px rgba(0,0,0,0.24);
+		margin-bottom: 20px;
+	}
+
+	.timeline-inner .col-1
+	{
+		float: left;
+		clear: right;
+		left: 0;
+	}
+
+	.timeline-inner .col-2
+	{
+		float: right;
+		clear: left;
+		right: 0;
+	}
+
+	.col-1 .timeline-box-inner
+	{
+		margin-right: 35px;
+	}
+
+	.col-2 .timeline-box-inner
+	{
+		margin-left: 35px;
+	}
+
+	.col-1 .dot
+	{
+		right: 0px;
+		margin-right: -4px;
+	}
+
+	.col-2 .dot
+	{
+		left: 0px;
+		margin-left: -4px;
+	}
+
+	.timeline-box-year
+	{
+		font-weight: bold;
+		font-size: 15px;
+		color: red;
+	}
+
+	.timeline-box-name
+	{
+		font-size: 23px;
+		margin: 10px 0 10px 0;
+	}
+
+	.timeline-box-surname
+	{
+		font-style: italic;
+		font-size: 18px;
+		margin-bottom: 30px;
+		opacity: 0.7;
+	}
+
+	.timeline-box-body
+	{
+		word-wrap: break-word;
+		text-align: justify;
+	}
+
+	.timeline-box-ul, .timeline-box-li
+	{
+		list-style-type: disc;
+		margin-left: 7px;
+		margin-bottom: 4px;
+		word-wrap: break-word;
+	}
