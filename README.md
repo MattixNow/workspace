@@ -1,11 +1,10 @@
 /!\ IMPORTANT /!\ <br/>
-Dans l'index.html (PortFolio), le fchier JavaScript est en cours de rédaction donc je ne l'ai pas encore publié.
+Dans l'index.html (PortFolio), le fichier JavaScript est en cours de rédaction donc je ne l'ai pas encore publié.
 
-C'est mon espace de partage.
-Tous mes travaux seront disponibles dans ce repertoire.
-Ils seront classés dans des dossiers.
-Sur ce bon coddage :)
-A +
+Ceci est mon github,<br />
+Je metterai tous mes codes (chaque projet aura son dossier) sur cette page.
+
+Pour plus de renseignements : courbierarthur04@gmail.com
 
 Sincèrement,
 Arthur.
